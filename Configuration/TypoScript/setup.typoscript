@@ -1,0 +1,53 @@
+plugin.tx_nstestimonial_showcase {
+    view {
+        templateRootPaths.0 = EXT:ns_testimonial/Resources/Private/Templates/
+        templateRootPaths.1 = {$plugin.tx_nstestimonial_showcase.view.templateRootPath}
+        partialRootPaths.0 = EXT:ns_testimonial/Resources/Private/Partials/
+        partialRootPaths.1 = {$plugin.tx_nstestimonial_showcase.view.partialRootPath}
+        layoutRootPaths.0 = EXT:ns_testimonial/Resources/Private/Layouts/
+        layoutRootPaths.1 = {$plugin.tx_nstestimonial_showcase.view.layoutRootPath}
+    }
+settings {
+        storagePid = {$plugin.tx_nstestimonial_showcase.settings.storagePid}
+        controls = {$plugin.tx_nstestimonial_showcase.appearanceSettings.generalGallery.controls}
+        paginationType = {$plugin.tx_nstestimonial_showcase.appearanceSettings.appearance.Paging}
+        PagingPosition = {$plugin.tx_nstestimonial_showcase.appearanceSettings.appearance.PagingPosition}
+        GlobalPagingPosition = {$plugin.tx_nstestimonial_showcase.appearanceSettings.appearance.PagingPosition}
+
+    }
+
+}
+
+# Module configuration
+module.tx_nstestimonial_nitsan_nstestimonialtestimonial {
+settings {
+        storagePid = {$module.tx_nstestimonial_testimonial.settings.storagePid}
+    }
+    view {
+        templateRootPaths.0 = EXT:ns_testimonial/Resources/Private/Backend/Templates/
+        templateRootPaths.1 = {$module.tx_nstestimonial_testimonial.view.templateRootPath}
+        partialRootPaths.0 = EXT:ns_testimonial/Resources/Private/Backend/Partials/
+        partialRootPaths.1 = {$module.tx_nstestimonial_testimonial.view.partialRootPath}
+        layoutRootPaths.0 = EXT:ns_testimonial/Resources/Private/Backend/Layouts/
+        layoutRootPaths.1 = {$module.tx_nstestimonial_testimonial.view.layoutRootPath}
+    }
+}
+
+page = PAGE
+page {
+
+    includeCSSLibs {
+      extension = EXT:ns_testimonial/Resources/Public/Css/custom.css
+      icons = https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+      icons.external = 1
+    }
+
+    includeJSLibs {
+
+    }
+
+    includeJSFooterlibs {
+      extensionJs = EXT:ns_testimonial/Resources/Public/Js/custom.js
+
+    }
+}

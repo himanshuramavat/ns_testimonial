@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:ns_testimonial/Resources/Private/Language/locallang.xlf" date="2023-09-09T09:55:42Z" product-name="ns_testimonial">
+		<header/>
+		<body>
+			<trans-unit id="tx_nstestimonial_domain_model_testimonial" resname="tx_nstestimonial_domain_model_testimonial">
+				<source>Testimonial</source>
+			</trans-unit>
+			<trans-unit id="tx_nstestimonial_domain_model_testimonial.title" resname="tx_nstestimonial_domain_model_testimonial.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_nstestimonial_domain_model_testimonial.description" resname="tx_nstestimonial_domain_model_testimonial.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_nstestimonial_domain_model_testimonial.name" resname="tx_nstestimonial_domain_model_testimonial.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_nstestimonial_domain_model_testimonial.position" resname="tx_nstestimonial_domain_model_testimonial.position">
+				<source>Position</source>
+			</trans-unit>
+			<trans-unit id="tx_nstestimonial_domain_model_testimonial.rating" resname="tx_nstestimonial_domain_model_testimonial.rating">
+				<source>Rating</source>
+			</trans-unit>
+			<trans-unit id="tx_nstestimonial_domain_model_testimonial.image" resname="tx_nstestimonial_domain_model_testimonial.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="NsTestimonial">
+				<source>NS Testimonial</source>
+			</trans-unit>
+			<trans-unit id="tx_nstestimonial_domain_model_testimonial.documentaiton">
+				<source>Documentaiton</source>
+			</trans-unit>
+			<trans-unit id="tx_nstestimonial_domain_model_testimonial.helpsupport">
+				<source>Help &amp; Support</source>
+			</trans-unit>
+			<trans-unit id="tx_nstestimonial_domain_model_testimonial.donate">
+				<source>Donate</source>
+			</trans-unit>
+			<trans-unit id="tx_nsfeedback_domain_model_feedbacks.resubmit">
+				<source>Something wrong, please resubmit your feedback.</source>
+			</trans-unit>
+			<trans-unit id="globalsettings">
+				<source>Global Setting</source>
+			</trans-unit>
+			<trans-unit id="Dashboard">
+				<source>Dashboard</source>
+			</trans-unit>
+			<trans-unit id="premiumExtension">
+				<source>Premium Extension</source>
+			</trans-unit>
+			<trans-unit id="basicSettings">
+				<source>Basic Settings</source>
+			</trans-unit>
+			<trans-unit id="noThemeConfiguration">
+				<source>Sorry, Configuration not available for this!</source>
+			</trans-unit>
+			<trans-unit id="sorry">
+				<source>Sorry!</source>
+			</trans-unit>
+			<trans-unit id="noconstantline1">
+				<source>No Extension Template available for this Page.</source>
+			</trans-unit>
+			<trans-unit id="noconstantline2">
+				<source>Please go the Template Module and create new extension Template for this page.</source>
+			</trans-unit>
+			<trans-unit id="commonSettings">
+				<source>Global Settings</source>
+			</trans-unit>
+			<trans-unit id="tx_nstestimonial_domain_model_testimonial.nsreport">
+				<source>Albums</source>
+			</trans-unit>
+			<trans-unit id="cat_appearance">
+				<source>Appearance</source>
+			</trans-unit>
+			<trans-unit id="opps">
+                <source>Oops!</source>
+            </trans-unit>
+             <trans-unit id="info1">
+                <source>Gallery Albums is not available.</source>
+            </trans-unit>
+            <trans-unit id="info2">
+                <source>Please select other page to view feedbacks.</source>
+            </trans-unit>
+			<trans-unit id="info3">
+				<source>Please add storage folder id.</source>
+			</trans-unit>
+            <trans-unit id="totalAlbums">
+				<source>Total Album</source>
+			</trans-unit>
+			<trans-unit id="totalCategory">
+				<source>Total Category</source>
+			</trans-unit>
+			<trans-unit id="totalimages">
+				<source>Total Media</source>
+			</trans-unit>
+			<trans-unit id="action">
+				<source>Action</source>
+			</trans-unit>
+			<trans-unit id="Edit">
+				<source>Edit</source>
+			</trans-unit>
+			<trans-unit id="generalGallery">
+				<source>General gallery</source>
+			</trans-unit>
+			<trans-unit id="save">
+				<source>Save Changes</source>
+			</trans-unit>
+			<trans-unit id="controls">
+				<source>Navigation Arrow</source>
+			</trans-unit>
+			<trans-unit id="general.pagination">
+				<source>Pagination</source>
+			</trans-unit>
+			<trans-unit id="general.loadmore">
+				<source>Load More</source>
+			</trans-unit>
+			<trans-unit id="general.all">
+				<source>All</source>
+			</trans-unit>
+			<trans-unit id="general.photos">
+				<source>Media</source>
+			</trans-unit>
+			<trans-unit id="storagePid">
+				<source>Default storage PID</source>
+			</trans-unit>
+			<trans-unit id="general.AddNew">
+				<source>Add new album</source>
+			</trans-unit>
+			<trans-unit id="PagingPosition">
+				<source>Pagination/Loadmore position</source>
+			</trans-unit>
+			<trans-unit id="pagination">
+				<source>Pagination type</source>
+			</trans-unit>
+			<trans-unit id="selectAlbum">
+				<source>Select albums</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

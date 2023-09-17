@@ -1,0 +1,27 @@
+############################
+### CUSTOM SUBCATEGORIES ###
+###########################
+# customsubcategory=05=Storage settings
+# customsubcategory=10_Appearance=LLL:EXT:ns_testimonial/Resources/Private/Language/locallang.xlf:cat_appearance
+# customsubcategory=20_general=LLL:EXT:ns_testimonial/Resources/Private/Language/locallang.xlf:generalGallery
+
+plugin.tx_nstestimonial_showcase {
+    storageSettings{
+        #cat=ns_testimonial_commonSettings/05/01; type=int; label=LLL:EXT:ns_testimonial/Resources/Private/Language/locallang.xlf:storagePid
+        storagePid =
+    }
+	appearanceSettings {
+		appearance {
+            #cat=ns_testimonial_commonSettings/10_Appearance/03; type=boolean; label=Add jQuery
+	        jQuery = 0
+
+            #cat=ns_testimonial_commonSettings/10_Appearance/04; type=options[LLL:EXT:ns_testimonial/Resources/Private/Language/locallang.xlf:general.loadmore=loadmore,LLL:EXT:ns_testimonial/Resources/Private/Language/locallang.xlf:general.pagination=pagination]; label=LLL:EXT:ns_testimonial/Resources/Private/Language/locallang.xlf:pagination
+	        Paging = pagination
+
+		}
+		generalGallery {
+            #cat=ns_testimonial_commonSettings/20_general/06; type=boolean; label = LLL:EXT:ns_testimonial/Resources/Private/Language/locallang.xlf:controls
+			controls = 1
+		}
+	}
+}

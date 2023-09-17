@@ -1,0 +1,52 @@
+{namespace ns=NITSAN\NsTestimonial\ViewHelpers}
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers" data-namespace-typo3-fluid="true">
+	<f:layout name="Default" />
+
+	<f:section name="content">
+		<div class="ns-backup-table-block-wrap">
+			<div class="card">
+				<div class="card-header">
+					<div class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center">
+						<h5> <f:translate key="NsTestimonial" extensionName="NsTestimonial" /> </h5>
+						<f:if condition="{settings.storagePid}">
+							 <a href="{ns:Misc.BackendNewLink(tableName:'tx_nstestimonial_domain_model_testimonial', identifier:'{settings.storagePid}')}" class="btn btn-primary">
+							 	<em class="fa fa-plus-circle" aria-hidden="true"></em>
+						      	<f:translate key="general.AddNew" extensionName="NsTestimonial" />
+                             </a>
+						</f:if>
+					</div>
+				</div>
+				<div class="card-body">
+					<div class="ns-backup-table-wrap">
+						<table class="table ns-ext-datatable">
+							<thead class="thead-light">
+								<tr>
+									<th scope="col"><f:translate extensionName="NsTestimonial" key="tx_nstestimonial_domain_model_testimonial.title" /></th>
+									<th scope="col"> <f:translate key="totalimages" extensionName="NsTestimonial" /> </th>
+									<th scope="col" data-orderable="false"><f:translate key="action" /></th>
+								</tr>
+							</thead>
+							<tbody>
+								<f:for each="{testimonials}" as="testimonial">
+									<tr>
+										<td>{testimonial.title}</td>
+										<td>{testimonial.name}</td>
+										<td>
+											<div class="button-group ns-backup-actions-wrap">
+												<a href="{ns:Misc.BackendEditLink(tableName:'tx_nstestimonial_domain_model_testimonial', identifier:'{testimonial.uid}')}" class="btn btn-primary">
+														<em class="fa fa-pencil" aria-hidden="true"></em>
+												     	<f:translate key="Edit" extensionName="NsTestimonial" />
+                                                </a>
+
+											</div>
+										</td>
+									</tr>
+								</f:for>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</f:section>
+</html>

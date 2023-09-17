@@ -1,0 +1,46 @@
+{
+    "name": "nitsan/ns-testimonial",
+    "type": "typo3-cms-extension",
+    "description": "Testimonials Showcase Plugin for TYPO3 built to display testimonials, customer reviews, or quotes in multiple ways on any post, page, custom template, widget, etc. ",
+    "authors": [
+        {
+            "name": "Himasnhu",
+            "role": "Developer"
+        }
+    ],
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "typo3/cms-core": "^11.5"
+    },
+    "require-dev": {
+        "typo3/testing-framework": "^6.9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NITSAN\\NsTestimonial\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NITSAN\\NsTestimonial\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "typo3-ter/ns-testimonial": "self.version"
+    },
+    "config": {
+        "vendor-dir": ".Build/vendor",
+        "bin-dir": ".Build/bin"
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "TYPO3\\TestingFramework\\Composer\\ExtensionTestEnvironment::prepare"
+        ]
+    },
+    "extra": {
+        "typo3/cms": {
+            "web-dir": ".Build/public",
+            "extension-key": "ns_testimonial"
+        }
+    }
+}

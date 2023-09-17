@@ -1,0 +1,17 @@
+
+<f:form action="saveConstant" method="post" enctype="multipart/form-data" id="TypoScriptTemplateModuleController" name="editForm" pageType="22184356" class="ns-ext-form" >
+    <div class="d-sm-flex justify-content-sm-between align-items-sm-center ns-ext-submit-wrap sticky">
+        <h4>{menuName}</h4>
+        <button class="btn btn-primary" name="_savedok" form="TypoScriptTemplateModuleController"><em class="fa fa-save" aria-hidden="true"></em><f:translate key="save" /></button>
+        <input type="hidden" name="_savedok" value="1">
+    </div>
+    <f:debug title="" inline="1">{_all}</f:debug>
+    <f:if condition="{constant}!=''">
+        <f:then>
+            {constant->f:format.raw()}
+        </f:then>
+        <f:else>
+            <p class="alert alert-warning"><f:translate key="noThemeConfiguration" /></p>
+        </f:else>
+    </f:if>
+</f:form>

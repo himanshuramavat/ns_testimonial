@@ -1,0 +1,56 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:be.container pageTitle="{f:translate(key: 'pagetitle')}" includeRequireJsModules="{0:'TYPO3/CMS/NsTestimonial/Main'}">
+
+	<link rel="stylesheet" type="text/css" href="{f:uri.resource(path:'Vendor/bootstrap4.3.1.min.css', extensionName: 'ns_testimonial')}" media="all">
+	<link rel="stylesheet" type="text/css" href="{f:uri.resource(path:'Css/global.css', extensionName: 'ns_testimonial')}" media="all">
+	<link rel="stylesheet" type="text/css" href="{f:uri.resource(path:'Css/main.css', extensionName: 'ns_testimonial')}" media="all">
+
+	<div class="typo3-fullDoc" >
+		<div id="typo3-docheader">
+			<div class="typo3-docheader-functions">
+				<f:be.buttons.csh />
+
+			</div>
+		</div>
+
+		<div id="typo3-docbody">
+			<div id="typo3-inner-docbody" style="padding: 24px;margin-top: 0;transition: border .2s ease;">
+                <div class="ns-ext-navigation-wrap">
+                    <a class="navbar-brand ns-ext-name ns-ext-name-desktop" href="javascript:;"><f:translate key="nsgallery" extensionName="NsGallery" /></a>
+				<div class="ns-ext-navigation">
+					<nav class="navbar navbar-expand-lg">
+						<a class="navbar-brand ns-ext-name" href="javascript:;"><f:translate key="nsgallery" extensionName="NsGallery" /></a>
+						<button class="navbar-toggler" type="button" {bootstrapVariable}-toggle="collapse" {bootstrapVariable}-target="#nsextNavbar"
+								aria-controls="nsextNavbar" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="nsextNavbar">
+							<ul class="navbar-nav">
+								<li class="nav-item {f:if(condition: '{action}==dashboard', then: 'active')}">
+									<f:link.action action="dashboard" class="nav-link">
+										<em class="fa fa-dashboard" aria-hidden="true"></em><f:translate key="Dashboard" /></f:link.action>
+								</li>
+								<li class="nav-item {f:if(condition: '{action}==list', then: 'active')}">
+									<f:link.action action="list" class="nav-link" additionalAttributes="{data-toggle:'tooltip',data-placement:'bottom'}" title="{f:translate(key: 'report.desc')}">
+										<em class="fa fa-bars" aria-hidden="true"></em><f:translate key="tx_nstestimonial_domain_model_testimonial.nsreport" extensionName="NsTestimonial" />
+									</f:link.action>
+								</li>
+								<li class="nav-item {f:if(condition: '{action}==commonSettings', then: 'active')}">
+									<f:link.action action="commonSettings" additionalParams="{cat:'ns_testimonial_commonSettings'}" class="nav-link" additionalAttributes="{data-toggle:'tooltip',data-placement:'bottom'}" title="{f:translate(key: 'global.desc')}">
+										<em class="fa fas fa-cogs" aria-hidden="true"></em><f:translate key="commonSettings" />
+									</f:link.action>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+            </div>
+				<f:render section="content" />
+			</div>
+		</div>
+	</div>
+</f:be.container>
+</html>

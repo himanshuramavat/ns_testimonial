@@ -1,0 +1,55 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="content">
+	<div class="ns-ext-dashboard-wrap">
+		<div class="row">
+			<div class="col-sm-12">
+				<f:if condition="{total}">
+					<f:then>
+						<div class="row">
+							<div class="col-sm-6 ">
+								<div class="card custom-card">
+									<div class="card-body">
+										<div class="ns-ext-report-block d-flex align-items-center">
+											<div class="report-block-content">
+												<h5><f:translate key="totalAlbums" /></h5>
+											</div>
+											<div class="report-block-icon">
+												<em class="fa" aria-hidden="true"><strong><span>{total}</span></strong></em>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 ">
+								<div class="card custom-card">
+									<div class="card-body">
+										<div class="ns-ext-report-block d-flex align-items-center">
+											<div class="report-block-content">
+												<h5><f:translate key="totalimages" /></h5>
+											</div>
+											<div class="report-block-icon">
+												<em class="fa" aria-hidden="true"><strong><span>{totalImage}</span></strong></em>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</f:then>
+					<f:else>
+						<div class="alert alert-info" role="alert">
+							<h4 class="alert-heading"><f:translate key="opps" extensionName="NsTestimonial"/></h4>
+							<p><f:translate key="info1" extensionName="NsTestimonial" /></p>
+						</div>
+					</f:else>
+				</f:if>
+				<f:format.raw>{dashboardSupport}</f:format.raw>
+			</div>
+			<f:format.raw>{rightSide}</f:format.raw>
+		</div>
+	</div>
+</f:section>
+
+</html>

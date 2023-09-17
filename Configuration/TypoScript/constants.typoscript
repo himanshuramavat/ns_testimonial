@@ -1,0 +1,31 @@
+plugin.tx_nstestimonial_showcase {
+    view {
+        # cat=plugin.tx_nstestimonial_showcase/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:ns_testimonial/Resources/Private/Templates/
+        # cat=plugin.tx_nstestimonial_showcase/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:ns_testimonial/Resources/Private/Partials/
+        # cat=plugin.tx_nstestimonial_showcase/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:ns_testimonial/Resources/Private/Layouts/
+    }
+    settings {
+            # cat=plugin.tx_nstestimonial_showcase//a; type=string; label=Default storage PID
+            storagePid =
+        }
+}
+
+module.tx_nstestimonial_testimonial {
+    view {
+        # cat=module.tx_nstestimonial_testimonial/file; type=string; label=Path to template root (BE)
+        templateRootPath = EXT:ns_testimonial/Resources/Private/Backend/Templates/
+        # cat=module.tx_nstestimonial_testimonial/file; type=string; label=Path to template partials (BE)
+        partialRootPath = EXT:ns_testimonial/Resources/Private/Backend/Partials/
+        # cat=module.tx_nstestimonial_testimonial/file; type=string; label=Path to template layouts (BE)
+        layoutRootPath = EXT:ns_testimonial/Resources/Private/TestimonialBackend/Layouts/
+}
+    settings {
+        # cat=module.tx_nstestimonial_testimonial//a; type=string; label=Default storage PID
+        storagePid =
+    }
+}
+//Features constant Includes:
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ns_testimonial/Configuration/TypoScript/FeaturesConstants/commonSettings_constants.typoscript">

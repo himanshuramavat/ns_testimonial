@@ -1,0 +1,179 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    100,
+                    109
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_index": true,
+                    "_default1_list": true,
+                    "_default2_show": true,
+                    "_default3_new_create": true,
+                    "_default4_edit_update": false,
+                    "_default5_delete": false,
+                    "customActions": [
+                        ""
+                    ]
+                },
+                "name": "Testimonial",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": true,
+                    "type": "Entity",
+                    "uid": "936574402273"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "title",
+                            "propertyType": "String",
+                            "uid": "556415569717"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "description",
+                            "propertyType": "RichText",
+                            "uid": "1453925776288"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "name",
+                            "propertyType": "String",
+                            "uid": "911872600321"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "position",
+                            "propertyType": "String",
+                            "uid": "1607880471346"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "rating",
+                            "propertyType": "Integer",
+                            "uid": "855037741183"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "image",
+                            "propertyType": "Image",
+                            "uid": "475460919237"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [
+            {
+                "actions": {
+                    "controllerActionCombinations": ""
+                },
+                "description": "Configuration of Testimoninal showcase exteansion.",
+                "key": "testimonial",
+                "mainModule": "web",
+                "name": "Testimonial Showcase",
+                "tabLabel": "Testimonial Showcase"
+            }
+        ],
+        "description": "Testimonials Showcase Plugin for TYPO3 built to display testimonials, customer reviews, or quotes in multiple ways on any post, page, custom template, widget, etc. ",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 11.5.0-11.5.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "generateDocumentationTemplate": true,
+            "generateEditorConfig": true,
+            "generateEmptyGitRepository": true,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "11.5.0-11.5.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "ns_testimonial",
+        "name": "Testimonial Showcase",
+        "originalExtensionKey": "ns_testimonial",
+        "originalVendorName": "NITSAN",
+        "persons": [
+            {
+                "company": "NITSAN",
+                "email": "himanshu.nitsan@gmail.com",
+                "name": "HImasnhu",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "",
+                    "noncacheableActions": ""
+                },
+                "description": "Testimonials Showcase Plugin for TYPO3 built to display testimonials, customer reviews, or quotes in multiple ways on any post, page, custom template, widget, etc.",
+                "key": "showcase",
+                "name": "Testimonial Showcase"
+            }
+        ],
+        "vendorName": "NITSAN"
+    },
+    "wires": [],
+    "storagePath": "\/var\/www\/html\/typo3conf\/ext\/",
+    "log": {
+        "last_modified": "2023-09-09 09:55",
+        "extension_builder_version": "11.0.9",
+        "be_user": " (11)"
+    }
+}

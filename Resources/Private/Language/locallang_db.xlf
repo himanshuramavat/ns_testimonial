@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:ns_testimonial/Resources/Private/Language/locallang_db.xlf" date="2023-09-09T09:55:42Z" product-name="ns_testimonial">
+		<header/>
+		<body>
+			<trans-unit id="tx_nstestimonial_domain_model_testimonial" resname="tx_nstestimonial_domain_model_testimonial">
+				<source>Testimonial</source>
+			</trans-unit>
+			<trans-unit id="tx_nstestimonial_domain_model_testimonial.title" resname="tx_nstestimonial_domain_model_testimonial.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_nstestimonial_domain_model_testimonial.description" resname="tx_nstestimonial_domain_model_testimonial.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_nstestimonial_domain_model_testimonial.name" resname="tx_nstestimonial_domain_model_testimonial.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_nstestimonial_domain_model_testimonial.position" resname="tx_nstestimonial_domain_model_testimonial.position">
+				<source>Position</source>
+			</trans-unit>
+			<trans-unit id="tx_nstestimonial_domain_model_testimonial.rating" resname="tx_nstestimonial_domain_model_testimonial.rating">
+				<source>Rating</source>
+			</trans-unit>
+			<trans-unit id="tx_nstestimonial_domain_model_testimonial.image" resname="tx_nstestimonial_domain_model_testimonial.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_ns_testimonial_showcase.name" resname="tx_ns_testimonial_showcase.name">
+				<source>Testimonial Showcase</source>
+			</trans-unit>
+			<trans-unit id="tx_ns_testimonial_showcase.description" resname="tx_ns_testimonial_showcase.description">
+				<source>Testimonials Showcase Plugin for TYPO3 built to display testimonials, customer reviews, or quotes in multiple ways on any post, page, custom template, widget, etc.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

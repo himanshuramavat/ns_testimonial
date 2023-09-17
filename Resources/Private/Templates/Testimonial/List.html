@@ -1,0 +1,156 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+
+<f:section name="content">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <section class="home-testimonial">
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-center testimonial-pos">
+                    <div class="col-md-12 pt-4 d-flex justify-content-center">
+                        <h3>Testimonials</h3>
+                    </div>
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <h2>Explore the students experience</h2>
+                    </div>
+                </div>
+                <section class="home-testimonial-bottom">
+                    <div class="container testimonial-inner">
+                        <div class="row d-flex justify-content-center">
+
+                        <f:for each="{testimonials}" as="testimonial" iteration="i">
+                            <div class="col-md-4 style-3">
+                                <div class="tour-item ">
+                                    <div class="tour-desc bg-white">
+                                        <div class="tour-text color-grey-3 text-center">
+                                            <h3>{testimonial.title}</h3>
+                                            <f:format.raw>{testimonial.description}</f:format.raw>
+                                        </div>
+                                        <div class="d-flex justify-content-center pt-2 pb-2">
+                                            <f:image image="{testimonial.image}" treatIdAsReference="1"  alt="{testimonial.image.originalResource.name}" class="tm-people"/>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="testimonial-star" data-value="{testimonial.rating}"></div>
+                                        </div>
+                                        <div class="link-name d-flex justify-content-center">{testimonial.name}</div>
+                                        <div class="link-position d-flex justify-content-center">{testimonial.position}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </f:for>
+
+                        </div>
+                </section>
+        </section>
+
+        <div class="row text-center">
+            <div class="col-md-12">
+              <!-- Carousel wrapper -->
+              <div id="carouselBasicExample" class="carousel slide carousel-dark" data-mdb-ride="carousel">
+                <!-- Inner -->
+                <div class="carousel-inner">
+                  <!-- Single item -->
+                  <div class="carousel-item active">
+                    <p class="lead font-italic mx-4 mx-md-5">
+                      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
+                      numquam iure provident voluptate esse quasi, voluptas nostrum quisquam!"
+                    </p>
+                    <div class="mt-5 mb-4">
+                      <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+                        class="rounded-circle img-fluid shadow-1-strong" alt="smaple image" width="100"
+                        height="100" />
+                    </div>
+                    <p class="text-muted mb-0">- Anna Morian</p>
+                  </div>
+
+                  <!-- Single item -->
+                  <div class="carousel-item">
+                    <p class="lead font-italic mx-4 mx-md-5">
+                      "Neque cupiditate assumenda in maiores repudiandae mollitia adipisci maiores
+                      repudiandae mollitia consectetur adipisicing architecto elit sed adipiscing
+                      elit."
+                    </p>
+                    <div class="mt-5 mb-4">
+                      <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(31).webp"
+                        class="rounded-circle img-fluid shadow-1-strong" alt="smaple image" width="100"
+                        height="100" />
+                    </div>
+                    <p class="text-muted mb-0">- Teresa May</p>
+                  </div>
+
+                  <!-- Single item -->
+                  <div class="carousel-item">
+                    <p class="lead font-italic mx-4 mx-md-5">
+                      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                      dolore eu fugiat nulla pariatur est laborum neque cupiditate assumenda in
+                      maiores."
+                    </p>
+                    <div class="mt-5 mb-4">
+                      <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+                        class="rounded-circle img-fluid shadow-1-strong" alt="smaple image" width="100"
+                        height="100" />
+                    </div>
+                    <p class="text-muted mb-0">- Kate Allise</p>
+                  </div>
+                </div>
+                <!-- Inner -->
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample"
+                  data-mdb-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample"
+                  data-mdb-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <!-- Carousel wrapper -->
+            </div>
+          </div>
+
+    <div class="container">
+        <h2>Carousel Example</h2>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp" alt="Los Angeles" style="width:100%;">
+            </div>
+
+            <div class="item">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(31).webp" alt="Chicago" style="width:100%;">
+            </div>
+
+            <div class="item">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="New york" style="width:100%;">
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+</f:section>
+</html>
